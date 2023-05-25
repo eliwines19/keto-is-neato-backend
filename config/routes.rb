@@ -11,6 +11,8 @@ Rails.application.routes.draw do
       namespace :v1 do
         resources :recipes
         resources only: [:create, :destroy]
+        resources :categories
+        resources only: [:create, :destroy]
       end
     end
 

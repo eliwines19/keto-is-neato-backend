@@ -6,8 +6,8 @@ module Api
             protect_from_forgery with: :null_session
 
             def index
-                games = Recipe.all
-                render json: RecipeSerializer.new(games).serialized_json
+                recipes = Recipe.all
+                render json: RecipeSerializer.new(recipes).serialized_json
             end
 
             def show
