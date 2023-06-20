@@ -1,17 +1,17 @@
-class SessionsControllers < ApplicationController
+class SessionsController < ApplicationController
 
     def home
         @user = current_user
     end
 
     def create
-        user = User.find_by(name: params[:user][:name])
+        user = User.find_by(username: params[:user][:username])
         if user && user.authenticate(params[:user][:password])
             session[:user_id] = user.id
-            # need to redirect to recipes create page
+            redirect_to api_v1_recipes_url
         else
             flash[:message] = "Incorrect login information, please try again."
-            # needs to redirect to login page
+            redirect_to "/login"
         end
     end
 
