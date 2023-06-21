@@ -8,6 +8,25 @@
 </head>
 <body>
     
-    <h1>Welcome, <%= @user.username %>!</h1>
+    <h1>New Recipe</h1>
+
+    <%= form_for(@recipe) do |r|%>
+
+        <%= r.label :name, "Recipe Name" %><br>
+        <%= r.text_field :name %>
+        <br><br>
+        <%= r.label :ingredients, "List the ingredients for this Recipe" %><br>
+        <%= r.text_area :ingredients %>
+        <br><br>
+        <%= r.label :image_url, "Add a link to the picture for this recipe" %><br>
+        <%= r.text_field :image_url %>
+        <br><br>
+        <%= r.label :category_id, "What category does this Recvipe belong to?" %>
+        <%= r.text_field :category_id %>
+        <br><br>
+        <%= r.submit %>
+
+    <% end %>
+    
 </body>
 </html>
