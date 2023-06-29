@@ -23,6 +23,7 @@
                 <% end %>
             </ul>
             <img src=<%= r.image_url %>>
+            <%= button_to "Delete", "/recipes/#{r.id}", method: :delete %>
         <% end %>
     </div>
 </body>

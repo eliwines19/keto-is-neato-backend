@@ -31,6 +31,7 @@ class RecipesController < ApplicationController
 
 
     def destroy
+        @recipe = Recipe.find_by_id(params[:id])
         @recipe.destroy
         redirect_to '/recipes/home'
     end
