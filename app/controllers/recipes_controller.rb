@@ -12,7 +12,12 @@ class RecipesController < ApplicationController
     end
 
     def create
-        @recipe = Recipe.create(recipe_params)
+        @recipe = Recipe.create(
+            name: recipe_params[:name],
+            ingredients: recipe_params[:ingredients].split(", "),
+            image_url: recipe_params[:image_url],
+            category_id: recipe_params[:category_id]
+        )
         if @recipe.save
             redirect_to '/recipes/home'
         else
@@ -32,7 +37,7 @@ class RecipesController < ApplicationController
     private
 
     def recipe_params
-        params.require(:recipe).permit(:name, :ingredients, :image_url, :category_id)
+        params[:recipe]
     end
 
 end
