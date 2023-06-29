@@ -4,6 +4,7 @@ class RecipesController < ApplicationController
 
     def home
         @user = current_user
+        @recipes = Recipe.all
     end
 
     # need to update the create, update, and delete methods for recipes controller to reflect the MVC structure
@@ -13,13 +14,18 @@ class RecipesController < ApplicationController
     end
 
     def create
-        # recipe = Recipe.new(recipe_params)
+        @recipe = Recipe.create(recipe_params)
+        if @recipe.save
+            redirect_to '/recipes/home'
+        else
+            redirect_to '/recipes/new'
+        end
 
-        # if recipe.save
-        #     render json: RecipeSerializer.new(recipe).serialized_json
-        # else
-        #     render json: { error: recipe.errors.messages }, status: 422
-        # end
+        if recipe.save
+            render json: RecipeSerializer.new(recipe).serialized_json
+        else
+            render json: { error: recipe.errors.messages }, status: 422
+        end
     end
 
     def update
