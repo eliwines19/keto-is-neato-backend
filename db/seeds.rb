@@ -17,7 +17,7 @@ cat5 = Category.find_by(name: "Dessert")
 
 recipes = Recipe.create([
     {
-        name: "Broccoli cheddar oup",
+        name: "Broccoli cheddar Soup",
         ingredients: ["1 1/ cups chopped frozen broccoli",
             "2 1/2 cups half and half",
             "1 ½ lbs shredded cheddar",
@@ -25,7 +25,7 @@ recipes = Recipe.create([
             "½ teaspoon onion powder",
             "2 tablespoons butter",
             "Salt and pepper"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat1.id
     },
     {
@@ -36,7 +36,7 @@ recipes = Recipe.create([
             "¼ cup chopped bacon bits",
             "1 hard boiled egg",
             "½ tablespoon mustard"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat1.id
     },
     {
@@ -47,7 +47,7 @@ recipes = Recipe.create([
             "1 teaspoon chili powder",
             "1 ½ tablespoons melted butter",
             "½ - ¾ cup buffalo sauce"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat2.id
     },
     {
@@ -55,7 +55,7 @@ recipes = Recipe.create([
         ingredients: ["2 lbs boneless, skinless, thin sliced chicken breast",
             "24 Oz of Rao's Marinara",
             "½ - ¾ lb sliced or shredded provolone"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat2.id
     },
     {
@@ -68,7 +68,7 @@ recipes = Recipe.create([
             "1 6oz can drained mushrooms",
             "1 teaspoon oregano",
             "1 teaspoon thyme"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat2.id
     },
     {
@@ -80,11 +80,11 @@ recipes = Recipe.create([
             "½ packet dry dranch seasoning",
             "16oz cooked crispy, chopped bacon",
             "¾ lb shredded cheddar cheese"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat2.id
     },
     {
-        name: "Perfect Roast turkey",
+        name: "Perfect Roast Turkey",
         ingredients: ["10-12 lb thawed turkey",
             "¼ lb butter",
             "1 lemon zest w/ juice",
@@ -93,11 +93,11 @@ recipes = Recipe.create([
             "1 teaspoon rosemary",
             "1 onion quartered",
             "1 large head of garlic halved(cross wise)"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat2.id
     },
     {
-        name: "Creamed Beef on toast",
+        name: "Creamed Beef on Toast",
         ingredients: ["8 slices toasted bread",
             "8 oz cream cheese at room temp",
             "1 tablespoon butter",
@@ -105,11 +105,11 @@ recipes = Recipe.create([
             "1 - 1 ½ lbs ground beef",
             "Equal parts salt and pepper",
             "Dried chives (for serving)"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat3.id
     },
     {
-        name: "Spicy cheesesteak wraps",
+        name: "Spicy Cheesesteak Wraps",
         ingredients: ["1 ½ - 2 lbs thin sliced beef",
             "2 tablespoons butter",
             "2 tablepspons worcester sauce",
@@ -118,11 +118,11 @@ recipes = Recipe.create([
             "4 slices american cheese",
             "4 slices pepper jack cheese",
             "Chipotle suce (for serving)"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat3.id
     },
     {
-        name: "Moms Famous Cheese burgers",
+        name: "Moms Famous Cheese Burgers",
         ingredients: ["3 tablespoons butter; divided",
             "1 tablespppon olive oil",
             "2 thin sliced yellow onions",
@@ -134,11 +134,11 @@ recipes = Recipe.create([
             "4 oz chevre",
             "⅓ cup half and half or heavy cream",
             "⅓ teaspoon dry mustard"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat3.id
     },
     {
-        name: "Buffalo Bell peppers",
+        name: "Buffalo Bell Peppers",
         ingredients: ["1 lb ground beef",
             "¾ cup buffalo sauce",
             "4 oz cream cheese",
@@ -146,20 +146,20 @@ recipes = Recipe.create([
             "1 cup shredded colby jack divided",
             "6-8 bell peppers",
             "Chives for garnish"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat3.id
     },
     {
-        name: "Italian chicago beef sandwiches",
-        ingredients: ["3 lb boneless country style rbs",
+        name: "Italian Chicago Beef Sandwiches",
+        ingredients: ["3 lb boneless country style ribs",
             "2 sliced bell peppers",
             "1 ½ tablespoon worcester sauce",
             "¼ cup red wine",
             "1 oven roasted bulb of garlic",
             "28 oz can crushed tomatoes",
-            "1 tablespoon:n basil, marjoram, oregano, garlic powder",
+            "1 tablespoon basil, marjoram, oregano, garlic powder",
             "1 teaspoon poultry seasoning"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat3.id
     },
     {
@@ -171,7 +171,7 @@ recipes = Recipe.create([
             "1 teaspoon dried basil",
             "1 teaspoon dried oregano",
             "Salt and pepper"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat4.id
     },
     {
@@ -183,7 +183,7 @@ recipes = Recipe.create([
             "Cracked black pepper",
             "Dill pickle sauce for serving",
             "Optional: lemon-may spread"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat4.id
     },
     {
@@ -197,7 +197,7 @@ recipes = Recipe.create([
             "3 bay leaves",
             "1 cup chopped green onion",
             "1 lb shrimp"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat4.id
     },
     {
@@ -208,7 +208,7 @@ recipes = Recipe.create([
             "Himalayan salt and black pepper",
             "½ tablespoon: garlic powder, onion powder, basil, oregano",
             "1 lemon juiced and zested"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat4.id
     },
     {
@@ -225,7 +225,7 @@ recipes = Recipe.create([
             "Fresh torn basil",
             "2 tablespoon sundried tomato pesto",
             "Fresh fennel fronds"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat4.id
     },
     {
@@ -238,7 +238,7 @@ recipes = Recipe.create([
             "1 teaspoon baking powder",
             "Sprinkle salt",
             "1 cup chocolate chips"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat5.id
     },
     {
@@ -255,11 +255,11 @@ recipes = Recipe.create([
             "¾ teaspoon baking soda",
             "½ teaspoon salt",
             "¼ teaspoon xanathan gum"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat5.id
     },
     {
-        name: "Choclate Cake",
+        name: "Chocolate Cake",
         ingredients: ["1 cup rebel cookies and cream at room temperature",
             "1 egg",
             "2 tablespoons vanilla extract",
@@ -270,16 +270,16 @@ recipes = Recipe.create([
             "¼ cup coconut flour",
             "1 teaspoon baking powder",
             "¼ cup chocolate chips"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat5.id
     },
     {
-        name: "Peanut Butter bars",
+        name: "Peanut Butter Bars",
         ingredients: ["1 ½ cups aloud flour",
             "1 cup melted peanut butter",
             "8 tablespoons melted butter",
             "4 packets stevia"],
-        image_url: "https://google.com",
+        image_url: "https://iili.io/HibI5ts.jpg",
         category_id: cat5.id
     }
 ])
