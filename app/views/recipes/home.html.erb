@@ -10,10 +10,6 @@
     
     <h1>Welcome, <%= @user.username %>!</h1>
 
-    <%= link_to "Logout", logout_path, method:"delete"%>
-    <br>
-    <%= link_to "New Recipe", new_recipe_path%>
-
     <div class="all-recipes-container">
         <% @recipes.each do |r| %>
             <div class="recipe-card">

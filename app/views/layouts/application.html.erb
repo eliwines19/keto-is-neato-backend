@@ -12,6 +12,18 @@
   </head>
 
   <body>
+    <% if logged_in? %>
+      <div class="navbar">
+        <div class="navbar-title-container">
+          <h1>Keto is Neato Backend</h1>
+        </div>
+        <div class="navbar-actions-container">
+          <%= link_to "Home", '/recipes/home' %>
+          <%= link_to "New Recipe", new_recipe_path%>
+          <%= link_to "Logout", logout_path, method:"delete"%>
+        </div>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
