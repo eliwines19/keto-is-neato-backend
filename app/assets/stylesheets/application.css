@@ -33,14 +33,11 @@ body {
    margin: 0;
 }
 
-.navbar-title-container {
+/* .navbar-title-container {
    
-}
+} */
 
 .navbar-actions-container {
-   /* background-color: #800080; */
-   /* display: flex;
-   justify-content: space-between; */
    padding: 1%;
 }
 
